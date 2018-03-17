@@ -1,0 +1,25 @@
+#
+# Script Related Ignores
+#
+.htaccess
+.htpasswd
+AppLoader/_toolbox
+
+#
+# IDE Related Ignores
+#
+*.iws
+*.iml
+.cache
+.idea
+.project
+.settings
+
+#
+# OS Related Ignores
+#
+.DS_Store
+.Spotlight-V100
+.Trashes
+Desktop.ini
+Thumbs.db
