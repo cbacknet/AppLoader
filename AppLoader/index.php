@@ -9,9 +9,9 @@
  *
  *
  * @author		Christian Knerr
- * @version		1.0.0
+ * @version		1.0.0-beta.2
  * @package		AppLoader
- * @copyright	©2018 CBACK Software
+ * @copyright	(c)2018 CBACK Software
  * @link		https://cback.net
  * @license		MIT License
  *
@@ -284,16 +284,16 @@ class CBACKAppLoader
 	 */
 	protected function clean_path($in)
 	{
-		$in = (string)$in;																// must be a string
+		$in = (string)$in;														// must be a string
 		$in = str_replace(array('..', '/', '\\', '%', '"', "'"), '', $in);		// remove bad chars
-		$in = str_replace(' ', '_', $in);								// convert spaces to _
+		$in = str_replace(' ', '_', $in);										// convert spaces to _
 
 		return $in;
 	}
 
 
 	/**
-	 * The startpage / mainpage of the script wich lists available packages and shows the welcome screen
+	 * The startpage / mainpage of the script which lists available packages and shows the welcome screen
 	 *
 	 * @access public
 	 */
@@ -356,7 +356,7 @@ class CBACKAppLoader
 
 
 	/**
-	 * Installs and extracts a webapp package
+	 * Downloads and extracts a webapp package
 	 *
 	 * @access public
 	 */
@@ -389,13 +389,13 @@ class CBACKAppLoader
 		}
 
 		// Download the file
-		$fileStream = fopen($this->workingDirPath.'/'.$workAry[1].'.zip', 'w+');
-		$curlSession = curl_init($workAry[2]);
+		$fileStream		= fopen($this->workingDirPath.'/'.$workAry[1].'.zip', 'w+');
+		$curlSession	= curl_init($workAry[2]);
 		curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, false);
 		curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
 		curl_setopt($curlSession, CURLOPT_CONNECTTIMEOUT, 10);
 		curl_setopt($curlSession, CURLOPT_FOLLOWLOCATION, 1);
-		curl_setopt ($curlSession, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 AppLoader");
+		curl_setopt($curlSession, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 AppLoader');
 		curl_setopt($curlSession, CURLOPT_FILE, $fileStream);
 		curl_exec($curlSession);
 		curl_close($curlSession);
