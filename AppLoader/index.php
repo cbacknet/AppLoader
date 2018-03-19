@@ -9,7 +9,7 @@
  *
  *
  * @author		Christian Knerr
- * @version		1.0.0-beta.2
+ * @version		1.0.0
  * @package		AppLoader
  * @copyright	(c)2018 CBACK Software
  * @link		https://cback.net
@@ -44,8 +44,8 @@ class CBACKAppLoader
 	 * @access private
 	 */
 	private $appDownloads = array(
-		array('phpMyAdmin',		'pma',		'https://files.phpmyadmin.net/phpMyAdmin/4.7.8/phpMyAdmin-4.7.8-all-languages.zip'),
-		array('MySQLDumper',	'msd',		'https://github.com/DSB/MySQLDumper/archive/master.zip')
+		array('phpMyAdmin',  'pma', 'https://files.phpmyadmin.net/phpMyAdmin/4.7.8/phpMyAdmin-4.7.8-all-languages.zip'),
+		array('MySQLDumper', 'msd', 'https://github.com/DSB/MySQLDumper/archive/master.zip')
 	);
 
 	/**
@@ -316,6 +316,10 @@ class CBACKAppLoader
 				case 'success':
 					$this->show_message('PACKAGE INSTALLED SUCCESSFULLY', 'Your package was installed successfully. You should now be able to execute it by clicking on the &quot;OPEN&quot; button in the App list.', 'success');
 					break;
+
+				case 'htcreated':
+					$this->show_message('.htaccess / .htpasswd GENERATED', 'Your .htaccess / .htpasswd folder protection was generated successfully. But you should test if it works properly on your server. If you get any problems just delete these two files with your FTP program again from the AppLoader folder.', 'success');
+					break;
 			}
 		}
 
@@ -389,8 +393,8 @@ class CBACKAppLoader
 		}
 
 		// Download the file
-		$fileStream		= fopen($this->workingDirPath.'/'.$workAry[1].'.zip', 'w+');
-		$curlSession	= curl_init($workAry[2]);
+		$fileStream  = fopen($this->workingDirPath.'/'.$workAry[1].'.zip', 'w+');
+		$curlSession = curl_init($workAry[2]);
 		curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, false);
 		curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
 		curl_setopt($curlSession, CURLOPT_CONNECTTIMEOUT, 10);
@@ -479,7 +483,7 @@ class CBACKAppLoader
 			file_put_contents($this->path.'/.htpasswd', $htpass_content);
 			file_put_contents($this->path.'/.htaccess', $htacc_content);
 
-			header('Location: index.php');
+			header('Location: index.php?msg=htcreated');
 			exit;
 		}
 

@@ -1,6 +1,6 @@
-# CBACK AppLoader *BETA*
-Do you know these situations, when you work somewhere with a very slow internet connection on a client
-website with no direct access to the server itself via SSH, but you quickly need a tool like **phpMyAdmin**
+# CBACK AppLoader
+Do you know these situations when you work somewhere with a very slow internet connection on a client
+website with no direct access to the server itself via SSH but you quickly need a tool like **phpMyAdmin**
 or **MySQLDumper** for some database work? Downloading these tools manually and upload them over a slow
 FTP/FTPS connection to the destination server can take a lot of time.
 
@@ -29,13 +29,13 @@ its overview page.
 <br /><br />
 
 ## How to use this tool
-* upload the folder **AppLoader** with its included **index.php** file to the destination webspace
+* Upload the folder **AppLoader** with its included **index.php** file to the destination webspace
 
-* give the folder **AppLoader** write permissions (if you want you can also rename the folder)
+* Give the folder **AppLoader** write permissions (if you want you can also rename the folder)
 
-* open the **AppLoader** folder with the index.php in your browser like https://example.com/AppLoader/
+* Open the **AppLoader** folder with the index.php in your browser like https://example.com/AppLoader/
 
-* if your webspace supports the tool, it will create a working-directory within its own folder automatically and
+* If your webspace supports the tool, it will create a working-directory within its own folder automatically and
 you will see the options to download & install the DB tools with just one click _(like a little package manager
 if you will)_
 
