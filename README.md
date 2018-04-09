@@ -1,10 +1,10 @@
 # CBACK AppLoader
-Do you know these situations when you work somewhere with a very slow internet connection on a client
+Do you know situations when you work somewhere with a very slow internet connection on a client
 website with no direct access to the server itself via SSH but you quickly need a tool like **phpMyAdmin**
 or **MySQLDumper** for some database work? Downloading these tools manually and upload them over a slow
 FTP/FTPS connection to the destination server can take a lot of time.
 
-#### Now CBACK AppLoader is here to be your time saver!
+### Now CBACK AppLoader is here to be your time saver!
 
 The **AppLoader** is just a little helper-script &mdash; written in PHP &mdash; which allows you to download
 database tools or even other tools _(if you add them to the script)_ from the client webspace itself and
