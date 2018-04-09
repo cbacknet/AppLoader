@@ -8,12 +8,12 @@
  * the root folder of this software package. Enjoy this little script!
  *
  *
- * @author		Christian Knerr
- * @version		1.0.0
- * @package		AppLoader
- * @copyright	(c)2018 CBACK Software
- * @link		https://cback.net
- * @license		MIT License
+ * @author       Christian Knerr
+ * @version      1.0.1
+ * @package      AppLoader
+ * @copyright    (c)2018 CBACK Software
+ * @link         https://cback.net
+ * @license      MIT License
  *
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
@@ -44,7 +44,7 @@ class CBACKAppLoader
 	 * @access private
 	 */
 	private $appDownloads = array(
-		array('phpMyAdmin',  'pma', 'https://files.phpmyadmin.net/phpMyAdmin/4.7.8/phpMyAdmin-4.7.8-all-languages.zip'),
+		array('phpMyAdmin',  'pma', 'https://files.phpmyadmin.net/phpMyAdmin/4.8.0/phpMyAdmin-4.8.0-all-languages.zip'),
 		array('MySQLDumper', 'msd', 'https://github.com/DSB/MySQLDumper/archive/master.zip')
 	);
 
