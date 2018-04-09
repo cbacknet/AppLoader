@@ -4,10 +4,10 @@
 Quite at the beginning of the _index.php_ file you can find a little configuration array which looks
 like this:
 ```php
-private $appDownloads = array(
-	array('phpMyAdmin', 'pma', 'https://files.phpmyadmin.net/phpMyAdmin/4.7.8/phpMyAdmin-4.7.8-all-languages.zip'),
-	array('MySQLDumper', 'msd', 'https://github.com/DSB/MySQLDumper/archive/master.zip')
-);
+	private $appDownloads = array(
+		array('phpMyAdmin',  'pma', 'https://files.phpmyadmin.net/phpMyAdmin/4.8.0/phpMyAdmin-4.8.0-all-languages.zip'),
+		array('MySQLDumper', 'msd', 'https://github.com/DSB/MySQLDumper/archive/master.zip')
+	);
 ```
  	
 Just add the tools you need by extending the array. Format looks like that:
