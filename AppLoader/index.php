@@ -9,9 +9,9 @@
  *
  *
  * @author       Christian Knerr
- * @version      1.0.3
+ * @version      1.0.4
  * @package      AppLoader
- * @copyright    (c)2020 CBACK Software
+ * @copyright    (c)2021 CBACK Software
  * @link         https://cback.net
  * @license      MIT License
  *
@@ -44,7 +44,8 @@ class CBACKAppLoader
 	 * @access private
 	 */
 	private $appDownloads = array(
-		array('phpMyAdmin',  'pma', 'https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip'),
+		array('phpMyAdmin 5 (for PHP >= 7.1)',  'pma5', 'https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.zip'),
+		array('phpMyAdmin 4 (for PHP 5.5 - 7.4)',  'pma4', 'https://files.phpmyadmin.net/phpMyAdmin/4.9.7/phpMyAdmin-4.9.7-all-languages.zip'),
 		array('MySQLDumper', 'msd', 'https://github.com/DSB/MySQLDumper/archive/master.zip')
 	);
 
