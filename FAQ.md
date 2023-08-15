@@ -16,8 +16,8 @@ array('MyAppNameToDisplay', 'MyFolderName', 'TheDownloadURL')
 ```
 
 - **key 0** contains the Display Name of the App in the script. Enter whatever you want there.
-- **key 1** contains the name of the folder the script will extract the ZIP into. Enter a desired folder name there without a path
-- **key 2** has the download link to the ZIP file.
+- **key 1** contains the name of the folder the script will extract the ZIP into. Enter a desired folder name there without a path.
+- **key 2** contains the complete download URL to the ZIP file you want to download.
 
 <br /><br />
 
@@ -27,7 +27,7 @@ You can add every download URL to a ZIP file. Other file types are currently not
 <br /><br />
 
 #### Will you add tool ... to the script?
-By default we only integrated MySQLDumper and phpMyAdmin. But you can add own tools you need very
+By default, we only integrated MySQLDumper and phpMyAdmin. But you can add own tools you need very
 easily (see first question in this FAQ). To keep this script as simple as possible and to reduce the
 maintenance effort we will unfortunately not add more sources to the base script. But feel free to fork
 this project and extend it however you want to! Maybe you can also create some predefined ZIP packages
@@ -44,8 +44,8 @@ do that instantly. Or maybe someone just forgets to secure the folder by acciden
 download by default normally need a valid login to work, so even if somebody is able to download them,
 there is nothing _extremely_ bad happening if an unauthorized person could ever get access to this tool.
 
-However allowing you to download anything with a simple input field could end up in a huge security risk
-for your webspace. That's why we think a tool with less features is in this case better.
+However, allowing you to download anything with a simple input field could end up in a huge security risk
+for your webspace. That's why we think a tool with fewer features is in this case better.
 
 Beside that this really is mentioned only as little time-saver and helper-script and should not turn into
 a huge ControlPanel Software. There are other tools doing that but those are again more than one single file
@@ -57,7 +57,7 @@ to upload. :)
 Some hosters don't allow the FTP user to delete files or folders that were created by the PHP
 interpreter. Usually these hosters provide something like "fix file permissions" or "reassign file
 owner on webspace" or something like that in the hoster's administration interface. Just ask your
-hoster for help if it happens and you don't know how to reassign the files to the FTP account.
+hoster for help if it happens, and you don't know how to reassign the files to the FTP account.
 
 <br /><br />
 
@@ -70,9 +70,9 @@ files with your FTP program from the AppLoader folder. This removes any locks ge
 
 #### I get a timeout or memory_limit warning when using the tool
 Usually most of the webspaces out there should have enough configured capacity to download and extract
-one of the web tools provided. However it could happen that the PHP configuration on some webspaces is
+one of the web tools provided. However, it could happen that the PHP configuration on some webspaces is
 so restricted, that the script timeout or script memory limit setting prevents this script from handling
-the files to download and extract. If you can't lift up these values it seems that this tool unfortunately
+the files to download and extract. If you can't increase these values it seems that this tool unfortunately
 will not help you.
 
 <br /><br />

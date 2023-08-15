@@ -1,6 +1,6 @@
 # CBACK AppLoader
 Do you know situations when you work somewhere with a very slow internet connection on a client
-website with no direct access to the server itself via SSH but you quickly need a tool like **phpMyAdmin**
+website with no direct access to the server itself via SSH, but you quickly need a tool like **phpMyAdmin**
 or **MySQLDumper** for some database work? Downloading these tools manually and upload them over a slow
 FTP/FTPS connection to the destination server can take a lot of time.
 
@@ -8,7 +8,7 @@ FTP/FTPS connection to the destination server can take a lot of time.
 
 The **AppLoader** is just a little helper-script &mdash; written in PHP &mdash; which allows you to download
 database tools or even other tools _(if you add them to the script)_ from the client webspace itself and
-automatically extract them into a working-directory. This will save you the whole download/upload time and
+automatically extract them into a working-directory. This will save you the whole download/upload time, and
 you can get back to your work much faster. For this script we really went for simplicity: Just create an
 empty folder, give it write permission and upload the one single PHP file from this package. No fancy stuff
 that will again cost you a lot of upload time in regions with slow connection speeds and no possibility to
@@ -18,7 +18,7 @@ download stuff directly on the remote machine/webspace.
 
 ## So what does this tool do exactly?
 Once uploaded you can access the **AppLoader** from your browser. The script will then create a
-working-directory within its own folder where the tools will be downloaded and extracted into. By default
+working-directory within its own folder where the tools will be downloaded and extracted into. By default,
 you have the possibility to directly download and install **phpMyAdmin** or **MySQLDumper**. But you can
 add own tools into the script code if necessary.
 
